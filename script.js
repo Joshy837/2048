@@ -54,7 +54,7 @@ function initialise(new_board) {
   new_board[randint(0, n_rows - 1)][randint(0, n_columns - 1)] = Math.floor(
     randint(11, 20) / 10
   );
-  console.log(new_board);
+  document.getElementById("scoreCount").innerHTML = score;
   return new_board;
 }
 
@@ -76,7 +76,7 @@ function join(board_join, x1, y1, x2, y2) {
         joined_positions.push(x2 + n_columns * y2);
         check_move = 1;
         score += Math.pow(2, board_join[x2][y2]);
-        document.getElementById("score").innerHTML = "Score: " + score;
+        document.getElementById("scoreCount").innerHTML = score;
       }
     }
   }
@@ -174,6 +174,7 @@ function display(display_board) {
 
 document.getElementById("header").style.width = 95 * n_columns + "px";
 document.getElementById("input").style.width = 95 * n_columns + "px";
+
 initialise(board);
 display(board);
 

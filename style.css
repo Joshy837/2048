@@ -1,7 +1,8 @@
-.html {
+html {
   font-family: "Poppins", Helvetica, sans-serif;
   background-color: #e2e8f0;
 }
+
 .header {
   border-radius: 20px;
   background-color: #475569;
@@ -27,11 +28,10 @@
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  flex-wrap: wrap;
   padding: 20px;
   gap: 20px;
   background-color: #475569;
-  margin: auto;
+  margin: 40px auto;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
